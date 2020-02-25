@@ -2,8 +2,8 @@ with sessions as (
     select * from {{ ref('sessions') }}
 ),
 
-conversion as (
-    select * from {{ ref('user_conversion') }}
+user_conversions as (
+    select * from {{ ref('user_conversions') }}
 ),
 
 sessions_before_conversion as (
@@ -24,7 +24,8 @@ sessions_before_conversion as (
 
     left join conversion using (user_id)
 
-    where sessions.started_at <= conversion.converted_at
+    where sessions.started_at <= user_conversions.converted_at
+        and sessions.started_at >= dateadd(days, -30, user_conversions.converted_at)
 
 ),
 
