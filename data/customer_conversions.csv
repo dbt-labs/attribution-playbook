@@ -1,4 +1,4 @@
-user_id,converted_at,revenue
+customer_id,converted_at,revenue
 1170,2020-02-03 14:20:08,15
 2014,2020-02-04 4:30:21,15
 2265,2020-02-04 9:43:35,10

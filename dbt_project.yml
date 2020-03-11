@@ -27,8 +27,3 @@ seeds:
 
 models:
   transient: true
-
-on-run-end:
-  - "{{ grant_select_on_schemas(schemas, 'reporter') }}"
-
-

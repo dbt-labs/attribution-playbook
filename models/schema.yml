@@ -1,0 +1,104 @@
+version: 2
+
+models:
+  - name: customer_conversions
+    description: >
+      One record per customer, with a timestamp representing conversion (often a customer's first order)
+
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+      - name: converted_at
+        tests:
+          - not_null
+
+      - name: revenue
+        tests:
+          - not_null
+
+  - name: sessions
+    description: >
+      Sessions are discrete periods of activity by a user on a website. The industry standard
+      is to define a session as a series of activities followed by a 30-minute window without
+      any activity.
+
+      Use a dbt package to turn pageviews into sessions.
+
+    columns:
+      - name: customer_id
+        description: >
+          Typically, some sessions will not have a customer_id associated with them. For this
+          playbook, we've limited data to sessions with known customer_ids.
+        tests:
+          - not_null
+
+      - name: started_at
+        tests:
+          - not_null
+
+      - name: ended_at
+        tests:
+          - not_null
+
+  - name: attribution_touches
+    description: >
+      One record per web session prior to conversion AND within the last 30 days.
+
+    columns:
+      - name: session_id
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: total_sessions
+        description: The total sessions prior to conversion AND within the last 30 days.
+        tests:
+          - not_null
+
+      - name: session_index
+        description: The relative position of this session
+        tests:
+          - not_null
+
+      - name: first_touch_attribution_points
+        description: "1.0 if this is the first touch"
+        tests:
+          - not_null
+
+      - name: last_touch_attribution_points
+        description: "1.0 if this is the last touch before conversion"
+        tests:
+          - not_null
+
+      - name: forty_twenty_forty_attribution_points
+        description: "Attribute 40% (0.4 points) of the attribution to the first touch, 40% to the last touch, and divide the remaining 20% between all touches in between"
+        tests:
+          - not_null
+
+      - name: linear_attribution_points
+        description: Divide the point equally among all touches
+        tests:
+          - not_null
+
+      - name: first_touch_attribution_revenue
+        tests:
+          - not_null
+
+      - name: last_touch_attribution_revenue
+        tests:
+          - not_null
+
+      - name: forty_twenty_forty_attribution_revenue
+        tests:
+          - not_null
+
+      - name: linear_attribution_revenue
+        tests:
+          - not_null

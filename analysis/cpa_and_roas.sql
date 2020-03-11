@@ -6,7 +6,7 @@ with ad_spend as (
 
 attribution as (
 
-    select * from {{ ref('attribution_touchpoints') }}
+    select * from {{ ref('attribution_touches') }}
 
 ),
 

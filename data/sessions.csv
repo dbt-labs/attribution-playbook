@@ -1,8 +1,8 @@
-session_id,user_id,started_at,ended_at,utm_source,utm_medium,utm_campaign
+session_id,customer_id,started_at,ended_at,utm_source,utm_medium,utm_campaign
 1,2956,2020-02-01 12:55:16,2020-02-01 12:55:47,facebook_ads,paid_social,10percentpromocode
 2,4,2020-02-02 13:06:47,2020-02-02 13:18:56,facebook_ads,paid_social,freeshipping
 3,1170,2020-02-03 12:15:00,2020-02-03 12:15:19,facebook_ads,paid_social,10percentpromocode
-4,745,2020-02-03 12:29:32,2020-02-03 12:29:52,google,search,
+4,745,2020-02-03 12:29:32,2020-02-03 12:29:52,facebook_ads,paid_social,10percentpromocode
 5,439,2020-02-03 12:41:15,2020-02-03 12:43:35,google,search,
 6,566,2020-02-03 12:41:25,2020-02-04 0:40:51,facebook_ads,paid_social,freeshipping
 7,2113,2020-02-03 13:04:26,2020-02-03 13:04:36,adwords,paid_search,branded_search
@@ -14,7 +14,7 @@ session_id,user_id,started_at,ended_at,utm_source,utm_medium,utm_campaign
 13,4,2020-02-03 15:55:51,2020-02-03 15:56:00,google,search,
 14,2113,2020-02-03 16:16:46,2020-02-03 16:19:56,facebook_ads,paid_social,freeshipping
 15,2885,2020-02-03 17:46:25,2020-02-05 8:50:44,newsletter,email,
-16,745,2020-02-03 18:50:24,2020-02-03 18:55:54,direct,
+16,745,2020-02-03 18:50:24,2020-02-03 18:55:54,adwords,paid_search,branded_search
 17,2129,2020-02-03 19:30:22,2020-02-03 19:33:19,direct,
 18,130,2020-02-03 22:15:06,2020-02-04 9:56:17,adwords,paid_search,branded_search
 19,3442,2020-02-04 2:02:21,2020-02-06 3:08:32,direct,
@@ -30,7 +30,7 @@ session_id,user_id,started_at,ended_at,utm_source,utm_medium,utm_campaign
 29,1151,2020-02-04 8:15:35,2020-02-04 10:13:46,google,search,
 30,1106,2020-02-04 9:30:50,2020-02-04 9:55:00,direct,
 31,2265,2020-02-04 9:42:55,2020-02-04 9:43:35,facebook_ads,paid_social,freeshipping
-32,745,2020-02-04 10:05:21,2020-02-04 10:05:31,adwords,paid_search,branded_search
+32,745,2020-02-04 10:05:21,2020-02-04 10:05:31,direct,
 33,3695,2020-02-04 10:21:47,2020-02-04 12:28:35,direct,
 34,3827,2020-02-04 10:50:49,2020-02-04 10:50:49,newsletter,email,
 35,745,2020-02-04 11:06:16,2020-02-04 11:34:27,direct,
