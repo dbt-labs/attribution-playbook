@@ -31,8 +31,8 @@ attribution_aggregated as (
         date_trunc('month', converted_at) as date_month,
         utm_source,
 
-        sum(linear_attribution_points) as attribution_points,
-        sum(linear_attribution_revenue) as attribution_revenue
+        sum(linear_points) as attribution_points,
+        sum(linear_revenue) as attribution_revenue
 
     from attribution
 
