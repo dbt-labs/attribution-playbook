@@ -1,6 +1,6 @@
 # Attribution playbook
 This dbt project is a worked example to demonstrate how to model customer
-attribution. **Check out the full write-up [here](https://blog.getdbt.com/modeling-customer-attribution/),
+attribution. **Check out the full write-up [here](https://blog.getdbt.com/modeling-marketing-attribution/),
 as well as the documentation site for this project [here](https://www.getdbt.com/attribution-playbook/#!/overview).**
 
 Note that this project is not a package -- it is not intended to be installed in

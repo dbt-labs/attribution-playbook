@@ -1,8 +1,8 @@
 {% docs __overview__ %}
 # Attribution playbook
 This dbt project is a worked example to demonstrate how to model customer
-attribution. **Check out the full write-up [here](https://blog.getdbt.com/modeling-customer-attribution/),
-as well as the repo for this project [here](https://github.com/fishtown-analytics/mrr-attribution/).**
+attribution. **Check out the full write-up [here](https://blog.getdbt.com/modeling-marketing-attribution/),
+as well as the repo for this project [here](https://github.com/fishtown-analytics/attribution-playbook/).**
 
 Note that this project is not a package -- it is not intended to be installed in
 your own dbt project, but instead provides a good starting point for building
