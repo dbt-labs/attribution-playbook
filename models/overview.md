@@ -12,7 +12,7 @@ The SQL in this project is compatible with Snowflake¹.
 
 If you want to run this project yourself to play with it (assuming you have
 dbt installed):
-1. Clone [this repo](https://github.com/fishtown-analytics/mrr-playbook).
+1. Clone [this repo](https://github.com/fishtown-analytics/attribution-playbook).
 2. Create a profile named `playbook`, or update the `profile:` key in the
 `dbt_project.yml` file to point to an existing profile ([docs](https://docs.getdbt.com/docs/configure-your-profile)).
 3. Run `dbt deps`.
